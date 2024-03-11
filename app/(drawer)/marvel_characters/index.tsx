@@ -220,7 +220,10 @@ const MarvelPage = () => {
                 <Image
                   style={styles.modalCharacterImage}
                   source={{
-                    uri: `${characterToModal.thumbnail?.path}.${characterToModal.thumbnail?.extension}`,
+                    uri: `${characterToModal.thumbnail?.path?.replace(
+                      /^http:\/\//i,
+                      "https://"
+                    )}.${characterToModal.thumbnail?.extension}`,
                   }}
                 />
                 <View style={styles.modalCharacterInfoContainer}>
