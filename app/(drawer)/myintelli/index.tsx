@@ -11,18 +11,18 @@ const Page = () => {
   return (
     <>
       <Drawer.Screen
-        options={{ ...screenOptionsDrawer, title: "My Intelly" }}
+        options={{ ...screenOptionsDrawer, title: "My Intelli" }}
       />
 
-      <View style={styles.myintellyPage}>
-        <Text variant="headlineMedium">My Intelly</Text>
+      <View style={styles.myintelliPage}>
+        <Text variant="headlineMedium">My Intelli</Text>
       </View>
     </>
   );
 };
 
 const styles = StyleSheet.create({
-  myintellyPage: {
+  myintelliPage: {
     justifyContent: "center",
     alignItems: "center",
     height: "100%",

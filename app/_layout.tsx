@@ -23,7 +23,22 @@ const _layout = () => {
         <PaperProvider theme={colorScheme === "light" ? lightTheme : darkTheme}>
           <Stack>
             <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-            <Stack.Screen name="(public)" options={{ headerShown: false }} />
+            <Stack.Screen
+              name="(public)"
+              options={{
+                headerShown: false,
+                headerStyle: {
+                  backgroundColor:
+                    colorScheme === "light"
+                      ? lightTheme.colors.background
+                      : darkTheme.colors.background,
+                },
+                headerTintColor:
+                  colorScheme === "light"
+                    ? lightTheme.colors.tertiary
+                    : darkTheme.colors.tertiary,
+              }}
+            />
           </Stack>
         </PaperProvider>
       </SessionContext.Provider>

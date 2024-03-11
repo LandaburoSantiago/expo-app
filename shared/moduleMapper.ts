@@ -2,8 +2,8 @@ export const moduleMapper: {
   [key: string]: { name: string; title: string; icon: string };
 } = {
   MYINTELLI: {
-    name: "myintelly",
-    title: "My Intelly",
+    name: "myintelli",
+    title: "My Intelli",
     icon: "user",
   },
   INTELLI_TIME: {

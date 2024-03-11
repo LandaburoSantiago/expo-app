@@ -138,10 +138,10 @@ const _layout = () => {
             }}
           />
           <Drawer.Screen
-            key={"myintelly"}
-            name={"myintelly"}
+            key={"myintelli"}
+            name={"myintelli"}
             options={{
-              title: "My Intelly",
+              title: "My Intelli",
               drawerLabel: "",
               drawerItemStyle: {
                 display: "none",

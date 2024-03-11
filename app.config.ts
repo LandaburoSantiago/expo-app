@@ -8,5 +8,8 @@ export default ({ config }: any) => ({
     apiMarvelBaseUrl: process.env.API_MARVEL_BASE_URL,
     hashMd5ToMarvel: process.env.HASH_MD5_TO_MARVEL,
     tsMarvel: process.env.TS_MARVEL,
+    eas: {
+      projectId: process.env.PROJECT_ID,
+    },
   },
 });
