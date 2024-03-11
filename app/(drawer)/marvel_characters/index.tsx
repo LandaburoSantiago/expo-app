@@ -128,18 +128,22 @@ const MarvelPage = () => {
                   <View style={styles.charactersList}>
                     {charactersData.map((ele) => (
                       <TouchableRipple
+                        key={ele.id}
                         onPress={() => {
                           setModalCharacterVisible(true);
                           setCharacterToModal(ele);
                         }}
                         rippleColor="rgba(0, 0, 0, .32)"
                       >
-                        <Card key={ele.id}>
+                        <Card>
                           {ele.thumbnail ? (
                             <>
                               <Card.Cover
                                 source={{
-                                  uri: `${ele.thumbnail.path}.${ele.thumbnail.extension}`,
+                                  uri: `${ele.thumbnail.path?.replace(
+                                    /^http:\/\//i,
+                                    "https://"
+                                  )}.${ele.thumbnail.extension}`,
                                 }}
                               />
                             </>
